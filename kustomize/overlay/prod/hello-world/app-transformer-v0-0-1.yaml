@@ -1,0 +1,43 @@
+apiVersion: transformers.customplugin.co/v1
+kind: SkyUAppTransformer
+metadata:
+  name: skyu-deployment
+  annotations:
+    config.kubernetes.io/function: |
+      exec:
+        path: skyu-app-transformer
+spec:
+  applicationContainers:
+    - imageTag: latest
+      cpuRequestMili: 100
+      cpuLimitMili: 150
+      memoryRequestMb: 350
+      memoryLimitMb: 450
+      args: []
+      command: []
+      configMounts: []
+      applicationPorts: []
+      healthChecks: []
+      name: hello-world-main
+      imagePullPolicy: Always
+  minReplicas: 1
+  maxReplicas: 1
+  terminationGracePeriodSeconds: 60
+  nodeSelector: {}
+  suspend: false
+  ttlSecondsAfterFinished: 0
+  labels:
+    app: Hello World
+    version: v0.0.1
+    applicationId: app_eb41d64b-a7a7-4c31-9fa9-30265b6580b4
+    projectId: project_81c3f610-98b2-4272-8a86-98a43e863b3d
+    organizationId: org_5a158cfc-0d2c-467a-9217-db8b233a1b42
+    environmentId: env_a1cfb8d4-f1c8-40ae-8772-a326d79b0d67
+    environmentName: prod
+  horizontalAutoScalingRules: []
+  volumes: []
+  type: Deployment
+  name: Hello World
+  cronTab: ''
+  serviceType: ClusterIP
+  namespace: hello-prod

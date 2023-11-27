@@ -1,0 +1,16 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello world
+  labels:
+    app: hello world
+    applicationId: app_eb41d64b-a7a7-4c31-9fa9-30265b6580b4
+    version: v0.0.1
+spec:
+  selector:
+    matchLabels:
+      app: hello world
+  template:
+    metadata:
+      labels:
+        app: hello world
