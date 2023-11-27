@@ -1,0 +1,43 @@
+apiVersion: transformers.customplugin.co/v1
+kind: SkyUAppTransformer
+metadata:
+  name: skyu-deployment
+  annotations:
+    config.kubernetes.io/function: |
+      exec:
+        path: skyu-app-transformer
+spec:
+  applicationContainers:
+    - imageTag: latest
+      cpuRequestMili: 100
+      cpuLimitMili: 150
+      memoryRequestMb: 350
+      memoryLimitMb: 450
+      args: []
+      command: []
+      configMounts: []
+      applicationPorts: []
+      healthChecks: []
+      name: hello-main
+      imagePullPolicy: Always
+  minReplicas: 1
+  maxReplicas: 1
+  terminationGracePeriodSeconds: 60
+  nodeSelector: {}
+  suspend: false
+  ttlSecondsAfterFinished: 0
+  labels:
+    app: hello
+    version: v0.0.1
+    applicationId: app_0de4ba22-f99a-468a-9dd0-02e945efcb66
+    projectId: project_81c3f610-98b2-4272-8a86-98a43e863b3d
+    organizationId: org_5a158cfc-0d2c-467a-9217-db8b233a1b42
+    environmentId: env_24e6869a-c598-4012-823a-1e8b56c09bcd
+    environmentName: staging
+  horizontalAutoScalingRules: []
+  volumes: []
+  type: Deployment
+  name: hello
+  cronTab: ''
+  serviceType: ClusterIP
+  namespace: hello-staging
