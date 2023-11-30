@@ -19,7 +19,7 @@ spec:
       applicationPorts: []
       healthChecks: []
       name: testapp-main
-      imagePullPolicy: Always
+      imagePullPolicy: IfNotPresent
   minReplicas: 1
   maxReplicas: 1
   terminationGracePeriodSeconds: 60
