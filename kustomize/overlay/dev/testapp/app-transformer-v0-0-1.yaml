@@ -13,8 +13,10 @@ spec:
       cpuLimitMili: 150
       memoryRequestMb: 350
       memoryLimitMb: 450
-      args: []
-      command: []
+      args:
+        - dfdfsd
+      command:
+        - fgfdgd
       configMounts: []
       applicationPorts: []
       healthChecks: []
