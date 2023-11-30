@@ -42,6 +42,18 @@ spec:
         - xzczxc
       args:
         - bcvb
+    - imageTag: latest
+      cpuRequestMili: 100
+      cpuLimitMili: 150
+      memoryRequestMb: 350
+      memoryLimitMb: 450
+      args: []
+      command: []
+      configMounts: []
+      applicationPorts: []
+      healthChecks: []
+      name: testapp-main
+      imagePullPolicy: IfNotPresent
   minReplicas: 1
   maxReplicas: 1
   terminationGracePeriodSeconds: 60
