@@ -23,14 +23,16 @@ spec:
     - name: MyNewContainer
       imagePullPolicy: Always
       applicationPorts: []
-      cpuRequestMili: 100
+      cpuRequestMili: 400
       cpuLimitMili: 2000
-      memoryRequestMb: 100
+      memoryRequestMb: 412
       memoryLimitMb: 1000
       command:
         - test1
+        - test2
       args:
         - test12
+        - test123
   minReplicas: 1
   maxReplicas: 1
   terminationGracePeriodSeconds: 60
