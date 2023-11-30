@@ -25,8 +25,8 @@ spec:
     - name: ssdsd
       imagePullPolicy: Always
       applicationPorts: []
-      cpuRequestMili: 0.1
-      cpuLimitMili: 2
+      cpuRequestMili: 1500
+      cpuLimitMili: 1800
       memoryRequestMb: 100
       memoryLimitMb: 1000
       command:
