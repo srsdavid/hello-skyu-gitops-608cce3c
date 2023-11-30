@@ -13,15 +13,17 @@ spec:
       cpuLimitMili: 150
       memoryRequestMb: 350
       memoryLimitMb: 450
-      args: []
-      command: []
+      args:
+        - dfdfsd
+      command:
+        - fgfdgd
       configMounts: []
       applicationPorts: []
       healthChecks: []
       name: testapp-main
       imagePullPolicy: Always
     - name: ssdsd
-      imagePullPolicy: always
+      imagePullPolicy: Always
       applicationPorts: []
       cpuRequestMili: 0.1
       cpuLimitMili: 2
