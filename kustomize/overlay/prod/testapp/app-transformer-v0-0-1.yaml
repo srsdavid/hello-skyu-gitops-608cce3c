@@ -29,6 +29,15 @@ spec:
       memoryLimitMb: 1000
       command: []
       args: []
+    - name: new stage
+      imagePullPolicy: Always
+      applicationPorts: []
+      cpuRequestMili: 100
+      cpuLimitMili: 2000
+      memoryRequestMb: 100
+      memoryLimitMb: 1000
+      command: []
+      args: []
   minReplicas: 1
   maxReplicas: 1
   terminationGracePeriodSeconds: 60
