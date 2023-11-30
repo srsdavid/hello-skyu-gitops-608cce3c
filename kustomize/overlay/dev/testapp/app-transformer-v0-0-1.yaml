@@ -20,6 +20,17 @@ spec:
       healthChecks: []
       name: testapp-main
       imagePullPolicy: Always
+    - name: ssdsd
+      imagePullPolicy: always
+      applicationPorts: []
+      cpuRequestMili: 0.1
+      cpuLimitMili: 2
+      memoryRequestMb: 100
+      memoryLimitMb: 1000
+      command:
+        - sdsd
+      args:
+        - sdsd
   minReplicas: 1
   maxReplicas: 1
   terminationGracePeriodSeconds: 60
