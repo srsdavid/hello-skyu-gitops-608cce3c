@@ -31,6 +31,17 @@ spec:
         - sdsd
       args:
         - sdsd
+    - name: zxccxzc
+      imagePullPolicy: Always
+      applicationPorts: []
+      cpuRequestMili: 100
+      cpuLimitMili: 100
+      memoryRequestMb: 100
+      memoryLimitMb: 1000
+      command:
+        - xzczxc
+      args:
+        - bcvb
   minReplicas: 1
   maxReplicas: 1
   terminationGracePeriodSeconds: 60
