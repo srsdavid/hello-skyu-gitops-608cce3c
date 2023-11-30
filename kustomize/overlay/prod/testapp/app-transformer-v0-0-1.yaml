@@ -19,7 +19,7 @@ spec:
       applicationPorts: []
       healthChecks: []
       name: testapp-main
-      imagePullPolicy: If Not Present
+      imagePullPolicy: Always
     - name: dsfds
       imagePullPolicy: Always
       applicationPorts: []
