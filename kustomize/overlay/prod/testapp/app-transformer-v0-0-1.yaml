@@ -21,7 +21,7 @@ spec:
           targetPort: 80
           protocol: TCP
           apiSpec:
-            gitPath: sdsdsdx
+            gitPath: abc
             urlPath: sdsdsd
       healthChecks: []
       name: testapp-main
