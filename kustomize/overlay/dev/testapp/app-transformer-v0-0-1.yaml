@@ -8,32 +8,18 @@ metadata:
         path: skyu-app-transformer
 spec:
   applicationContainers:
-    - imageTag: latest
-      cpuRequestMili: 100
-      cpuLimitMili: 150
-      memoryRequestMb: 350
-      memoryLimitMb: 450
-      args:
-        - dfdfsd
-      command:
-        - fgfdgd
-      configMounts: []
-      applicationPorts: []
-      healthChecks: []
-      name: testapp-main
-      imagePullPolicy: Always
-    - name: ssdsd
-      imagePullPolicy: Always
-      applicationPorts: []
-      cpuRequestMili: 1500
+    - cpuRequestMili: 1500
       cpuLimitMili: 1800
       memoryRequestMb: 100
       memoryLimitMb: 1000
+      args:
+        - sdsd
       command:
         - sdsd
         - jdfhgdhg
-      args:
-        - sdsd
+      applicationPorts: []
+      name: ssdsd
+      imagePullPolicy: Always
     - name: zxccxzc
       imagePullPolicy: Always
       applicationPorts: []
@@ -45,18 +31,6 @@ spec:
         - xzczxc
       args:
         - bcvb
-    - imageTag: latest
-      cpuRequestMili: 100
-      cpuLimitMili: 150
-      memoryRequestMb: 350
-      memoryLimitMb: 450
-      args: []
-      command: []
-      configMounts: []
-      applicationPorts: []
-      healthChecks: []
-      name: testapp-main
-      imagePullPolicy: IfNotPresent
   minReplicas: 1
   maxReplicas: 1
   terminationGracePeriodSeconds: 60
