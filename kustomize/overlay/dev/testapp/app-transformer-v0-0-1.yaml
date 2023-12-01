@@ -7,18 +7,7 @@ metadata:
       exec:
         path: skyu-app-transformer
 spec:
-  applicationContainers:
-    - cpuRequestMili: 100
-      cpuLimitMili: 100
-      memoryRequestMb: 100
-      memoryLimitMb: 1000
-      args:
-        - bcvb
-      command:
-        - xzczxc
-      applicationPorts: []
-      name: zxccxzc
-      imagePullPolicy: Always
+  applicationContainers: []
   minReplicas: 1
   maxReplicas: 1
   terminationGracePeriodSeconds: 60
