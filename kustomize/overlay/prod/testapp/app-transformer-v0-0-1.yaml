@@ -12,27 +12,18 @@ spec:
       cpuLimitMili: 2000
       memoryRequestMb: 100
       memoryLimitMb: 1000
-      args: []
-      command: []
-      applicationPorts: []
-      name: wewewe
-      imagePullPolicy: Always
-    - name: newCOntainer4
-      imagePullPolicy: Always
+      args:
+        - dfdf
+      command:
+        - dsd
       applicationPorts:
         - port: 8080
           targetPort: 8080
           protocol: UDP
           apiSpec:
             gitPath: newcontainerpath
-      cpuRequestMili: 100
-      cpuLimitMili: 2000
-      memoryRequestMb: 100
-      memoryLimitMb: 1000
-      command:
-        - dsd
-      args:
-        - dfdf
+      name: newCOntainer4
+      imagePullPolicy: Always
   minReplicas: 1
   maxReplicas: 1
   terminationGracePeriodSeconds: 60
