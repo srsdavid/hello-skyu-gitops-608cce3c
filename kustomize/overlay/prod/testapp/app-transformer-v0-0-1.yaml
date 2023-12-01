@@ -15,17 +15,8 @@ spec:
       args: []
       command: []
       applicationPorts: []
-      name: new stage
+      name: wewewe
       imagePullPolicy: Always
-    - name: wewewe
-      imagePullPolicy: Always
-      applicationPorts: []
-      cpuRequestMili: 100
-      cpuLimitMili: 2000
-      memoryRequestMb: 100
-      memoryLimitMb: 1000
-      command: []
-      args: []
     - name: newCOntainer4
       imagePullPolicy: Always
       applicationPorts:
