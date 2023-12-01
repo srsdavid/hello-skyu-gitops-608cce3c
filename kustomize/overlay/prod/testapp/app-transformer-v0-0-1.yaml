@@ -53,6 +53,22 @@ spec:
       memoryLimitMb: 1000
       command: []
       args: []
+    - name: newCOntainer4
+      imagePullPolicy: Always
+      applicationPorts:
+        - port: 8080
+          targetPort: 8080
+          protocol: UDP
+          apiSpec:
+            gitPath: newcontainerpath
+      cpuRequestMili: 100
+      cpuLimitMili: 2000
+      memoryRequestMb: 100
+      memoryLimitMb: 1000
+      command:
+        - dsd
+      args:
+        - dfdf
   minReplicas: 1
   maxReplicas: 1
   terminationGracePeriodSeconds: 60
