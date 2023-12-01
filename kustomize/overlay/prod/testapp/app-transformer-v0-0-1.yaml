@@ -8,33 +8,15 @@ metadata:
         path: skyu-app-transformer
 spec:
   applicationContainers:
-    - imageTag: latest
-      cpuRequestMili: 100
-      cpuLimitMili: 150
-      memoryRequestMb: 350
-      memoryLimitMb: 450
-      args: []
-      command: []
-      configMounts: []
-      applicationPorts:
-        - port: 80
-          targetPort: 80
-          protocol: TCP
-          apiSpec:
-            gitPath: sdsdsdds
-            urlPath: sdsdsd
-      healthChecks: []
-      name: testapp-main
-      imagePullPolicy: Always
-    - name: dsfds
-      imagePullPolicy: Always
-      applicationPorts: []
-      cpuRequestMili: 100
+    - cpuRequestMili: 100
       cpuLimitMili: 2000
       memoryRequestMb: 100
       memoryLimitMb: 1000
-      command: []
       args: []
+      command: []
+      applicationPorts: []
+      name: dsfds
+      imagePullPolicy: Always
     - name: new stage
       imagePullPolicy: Always
       applicationPorts: []
