@@ -15,17 +15,8 @@ spec:
       args: []
       command: []
       applicationPorts: []
-      name: dsfds
+      name: new stage
       imagePullPolicy: Always
-    - name: new stage
-      imagePullPolicy: Always
-      applicationPorts: []
-      cpuRequestMili: 100
-      cpuLimitMili: 2000
-      memoryRequestMb: 100
-      memoryLimitMb: 1000
-      command: []
-      args: []
     - name: wewewe
       imagePullPolicy: Always
       applicationPorts: []
