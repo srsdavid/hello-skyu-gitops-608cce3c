@@ -7,16 +7,7 @@ metadata:
       exec:
         path: skyu-app-transformer
 spec:
-  applicationContainers:
-    - name: sddsd
-      imagePullPolicy: Always
-      applicationPorts: []
-      cpuRequestMili: 100
-      cpuLimitMili: 2000
-      memoryRequestMb: 100
-      memoryLimitMb: 1000
-      command: []
-      args: []
+  applicationContainers: []
   minReplicas: 1
   maxReplicas: 1
   terminationGracePeriodSeconds: 60
