@@ -16,7 +16,12 @@ spec:
       args: []
       command: []
       configMounts: []
-      applicationPorts: []
+      applicationPorts:
+        - port: 80
+          targetPort: 80
+          protocol: TCP
+          apiSpec:
+            gitPath: sdsdsd
       healthChecks: []
       name: testapp-main
       imagePullPolicy: Always
