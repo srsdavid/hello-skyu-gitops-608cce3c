@@ -22,6 +22,7 @@ spec:
           protocol: TCP
           apiSpec:
             gitPath: sdsdsd
+            urlPath: sdsdsd
       healthChecks: []
       name: testapp-main
       imagePullPolicy: Always
