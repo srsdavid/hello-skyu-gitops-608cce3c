@@ -17,6 +17,17 @@ spec:
       memoryLimitMb: 1000
       command: []
       args: []
+    - name: MySecond Container
+      imagePullPolicy: Always
+      applicationPorts: []
+      cpuRequestMili: 100
+      cpuLimitMili: 2000
+      memoryRequestMb: 100
+      memoryLimitMb: 1000
+      command:
+        - asdsad
+      args:
+        - dsffd
   minReplicas: 1
   maxReplicas: 1
   terminationGracePeriodSeconds: 60
