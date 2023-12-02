@@ -27,16 +27,8 @@ spec:
       cpuLimitMili: 2000
       memoryRequestMb: 100
       memoryLimitMb: 1000
-      command: []
-      args: []
-    - name: MyNewContainer
-      imagePullPolicy: Always
-      applicationPorts: []
-      cpuRequestMili: 100
-      cpuLimitMili: 2000
-      memoryRequestMb: 100
-      memoryLimitMb: 1000
-      command: []
+      command:
+        - ffdgf
       args: []
   minReplicas: 1
   maxReplicas: 1
