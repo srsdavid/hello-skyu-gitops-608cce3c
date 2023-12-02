@@ -9,8 +9,8 @@ metadata:
 spec:
   applicationContainers:
     - imageTag: latest
-      cpuRequestMili: 100
-      cpuLimitMili: 150
+      cpuRequestMili: 150
+      cpuLimitMili: 500
       memoryRequestMb: 350
       memoryLimitMb: 450
       args: []
