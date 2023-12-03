@@ -24,6 +24,12 @@ spec:
           timeoutSeconds: 30
           periodSeconds: 30
           failureThreshold: 30
+        - probeType:
+            - livenessProbe
+          initialDelaySeconds: 69
+          timeoutSeconds: 30
+          periodSeconds: 30
+          failureThreshold: 30
       name: myfirstapp-main
       imagePullPolicy: Always
   minReplicas: 1
