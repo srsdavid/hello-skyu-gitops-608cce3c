@@ -11,7 +11,7 @@ spec:
     - name: MyContainer
       imagePullPolicy: Always
       applicationPorts: []
-      cpuRequestMili: 100
+      cpuRequestMili: 400
       cpuLimitMili: 2000
       memoryRequestMb: 100
       memoryLimitMb: 1000
