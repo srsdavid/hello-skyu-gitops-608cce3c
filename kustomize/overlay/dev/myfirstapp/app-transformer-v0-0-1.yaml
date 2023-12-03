@@ -33,6 +33,12 @@ spec:
       args:
         - test12
         - test123
+      healthChecks:
+        - probeType: []
+          initialDelaySeconds: 30
+          timeoutSeconds: 30
+          periodSeconds: 30
+          failureThreshold: 30
   minReplicas: 1
   maxReplicas: 1
   terminationGracePeriodSeconds: 60
