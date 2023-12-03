@@ -15,16 +15,10 @@ spec:
       cpuLimitMili: 2000
       memoryRequestMb: 100
       memoryLimitMb: 1000
-      command: []
-      args: []
-      healthChecks:
-        - probeType:
-            - readinessProbe
-            - livenessProbe
-          initialDelaySeconds: 30
-          timeoutSeconds: 30
-          periodSeconds: 30
-          failureThreshold: 30
+      command:
+        - aas
+      args:
+        - asas
     - name: MySecond Container
       imagePullPolicy: Always
       applicationPorts: []
