@@ -16,9 +16,8 @@ spec:
       memoryRequestMb: 100
       memoryLimitMb: 1000
       command:
-        - aas
-      args:
-        - asas
+        - sdsd
+      args: []
     - name: MySecond Container
       imagePullPolicy: Always
       applicationPorts: []
