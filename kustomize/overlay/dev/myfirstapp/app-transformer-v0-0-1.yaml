@@ -17,7 +17,13 @@ spec:
       command: []
       configMounts: []
       applicationPorts: []
-      healthChecks: []
+      healthChecks:
+        - probeType:
+            - readinessProbe
+          initialDelaySeconds: 81
+          timeoutSeconds: 30
+          periodSeconds: 30
+          failureThreshold: 30
       name: myfirstapp-main
       imagePullPolicy: Always
     - name: MyNewContainer
