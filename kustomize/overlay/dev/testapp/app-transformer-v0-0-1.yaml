@@ -44,7 +44,7 @@ spec:
           tcpSocket:
             port: '4444'
           exec: {}
-          successThreshold: 30
+          successThreshold: 71
     - name: MySecond Container
       imagePullPolicy: Always
       applicationPorts: []
