@@ -66,17 +66,6 @@ spec:
           httpGet: {}
           tcpSocket:
             port: '33333'
-        - probeType:
-            - livenessProbe
-          initialDelaySeconds: 30
-          timeoutSeconds: 30
-          periodSeconds: 30
-          failureThreshold: 30
-          httpGet: {}
-          tcpSocket: {}
-          exec:
-            command:
-              - n,m,mn
   minReplicas: 1
   maxReplicas: 1
   terminationGracePeriodSeconds: 60
