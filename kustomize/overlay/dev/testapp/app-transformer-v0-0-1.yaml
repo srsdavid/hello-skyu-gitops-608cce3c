@@ -68,7 +68,18 @@ spec:
         - asdsad
       args:
         - dsffd
-      healthChecks: []
+      healthChecks:
+        - probeType:
+            - startupProbe
+          initialDelaySeconds: 30
+          timeoutSeconds: 30
+          periodSeconds: 30
+          failureThreshold: 30
+          httpGet: {}
+          tcpSocket: {}
+          exec:
+            command:
+              - sdsd
   minReplicas: 1
   maxReplicas: 1
   terminationGracePeriodSeconds: 60
