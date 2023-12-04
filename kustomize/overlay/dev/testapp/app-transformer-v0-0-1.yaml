@@ -27,31 +27,35 @@ spec:
           failureThreshold: 30
           httpGet:
             path: sdfdf
+            port: '3333'
+            httpHeaders: []
+          tcpSocket: {}
+          exec: {}
+          successThreshold: 30
+        - probeType:
+            - readinessProbe
+          initialDelaySeconds: 30
+          timeoutSeconds: 30
+          periodSeconds: 30
+          failureThreshold: 30
+          httpGet:
+            path: sdfdf
             port: '333'
             httpHeaders: []
           tcpSocket: {}
           exec: {}
         - probeType:
-            - livenessProbe
+            - readinessProbe
           initialDelaySeconds: 30
           timeoutSeconds: 30
           periodSeconds: 30
           failureThreshold: 30
-          httpGet: {}
-          tcpSocket:
-            port: '33'
-          exec: {}
-        - probeType:
-            - startupProbe
-          initialDelaySeconds: 30
-          timeoutSeconds: 30
-          periodSeconds: 30
-          failureThreshold: 30
-          httpGet: {}
+          httpGet:
+            path: sdfdf
+            port: '333'
+            httpHeaders: []
           tcpSocket: {}
-          exec:
-            command:
-              - sdsds
+          exec: {}
     - name: MySecond Container
       imagePullPolicy: Always
       applicationPorts: []
