@@ -31,6 +31,16 @@ spec:
             httpHeaders: []
           tcpSocket: {}
           exec: {}
+        - probeType:
+            - livenessProbe
+          initialDelaySeconds: 30
+          timeoutSeconds: 30
+          periodSeconds: 30
+          failureThreshold: 30
+          httpGet: {}
+          tcpSocket:
+            port: '33'
+          exec: {}
     - name: MySecond Container
       imagePullPolicy: Always
       applicationPorts: []
