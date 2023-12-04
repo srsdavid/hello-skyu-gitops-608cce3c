@@ -18,17 +18,7 @@ spec:
       command:
         - sdsd
       args: []
-      healthChecks:
-        - probeType:
-            - livenessProbe
-          initialDelaySeconds: 30
-          timeoutSeconds: 30
-          periodSeconds: 30
-          failureThreshold: 30
-          httpGet: {}
-          tcpSocket:
-            port: '4444'
-          exec: {}
+      healthChecks: []
     - name: MySecond Container
       imagePullPolicy: Always
       applicationPorts: []
