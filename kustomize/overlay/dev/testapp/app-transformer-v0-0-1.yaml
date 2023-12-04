@@ -22,18 +22,18 @@ spec:
         - probeType:
             - readinessProbe
           initialDelaySeconds: 30
-          timeoutSeconds: 30
-          periodSeconds: 30
-          failureThreshold: 30
+          timeoutSeconds: 49
+          periodSeconds: 52
+          failureThreshold: 54
           httpGet:
-            path: dfgfd
+            path: newpath
             port: '4444'
             httpHeaders:
-              - name: sdsd
-                value: sdsd
+              - name: newkey
+                value: value
           tcpSocket: {}
           exec: {}
-          successThreshold: 30
+          successThreshold: 52
         - probeType:
             - livenessProbe
           initialDelaySeconds: 68
