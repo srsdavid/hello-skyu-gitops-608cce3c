@@ -26,19 +26,6 @@ spec:
           periodSeconds: 30
           failureThreshold: 30
           httpGet:
-            path: testpath
-            port: '8080'
-            httpHeaders: []
-          tcpSocket: {}
-          exec: {}
-          successThreshold: 30
-        - probeType:
-            - readinessProbe
-          initialDelaySeconds: 186
-          timeoutSeconds: 30
-          periodSeconds: 30
-          failureThreshold: 30
-          httpGet:
             path: sdfdf
             port: '3333'
             httpHeaders: []
