@@ -20,18 +20,6 @@ spec:
       args: []
       healthChecks:
         - probeType:
-            - readinessProbe
-          initialDelaySeconds: 30
-          timeoutSeconds: 30
-          periodSeconds: 30
-          failureThreshold: 30
-          httpGet:
-            path: fghghfgh
-            port: '454545'
-            httpHeaders: []
-          tcpSocket: {}
-          exec: {}
-        - probeType:
             - livenessProbe
           initialDelaySeconds: 30
           timeoutSeconds: 30
@@ -41,6 +29,17 @@ spec:
           tcpSocket:
             port: '4444'
           exec: {}
+        - probeType:
+            - livenessProbe
+          initialDelaySeconds: 30
+          timeoutSeconds: 30
+          periodSeconds: 30
+          failureThreshold: 30
+          httpGet: {}
+          tcpSocket:
+            port: '4445'
+          exec: {}
+          successThreshold: 30
     - name: MySecond Container
       imagePullPolicy: Always
       applicationPorts: []
