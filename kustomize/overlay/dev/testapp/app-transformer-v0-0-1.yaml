@@ -41,6 +41,17 @@ spec:
           tcpSocket:
             port: '33'
           exec: {}
+        - probeType:
+            - startupProbe
+          initialDelaySeconds: 30
+          timeoutSeconds: 30
+          periodSeconds: 30
+          failureThreshold: 30
+          httpGet: {}
+          tcpSocket: {}
+          exec:
+            command:
+              - sdsds
     - name: MySecond Container
       imagePullPolicy: Always
       applicationPorts: []
