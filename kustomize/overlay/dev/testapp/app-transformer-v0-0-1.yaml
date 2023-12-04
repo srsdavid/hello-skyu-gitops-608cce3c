@@ -28,9 +28,12 @@ spec:
           httpGet:
             path: dfgfd
             port: '4444'
-            httpHeaders: []
+            httpHeaders:
+              - name: sdsd
+                value: sdsd
           tcpSocket: {}
           exec: {}
+          successThreshold: 30
         - probeType:
             - livenessProbe
           initialDelaySeconds: 68
