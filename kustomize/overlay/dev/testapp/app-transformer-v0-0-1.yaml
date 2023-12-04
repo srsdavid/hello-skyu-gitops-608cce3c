@@ -25,19 +25,6 @@ spec:
           timeoutSeconds: 30
           periodSeconds: 30
           failureThreshold: 30
-        - probeType:
-            - readinessProbe
-            - livenessProbe
-          initialDelaySeconds: 58
-          timeoutSeconds: 30
-          periodSeconds: 30
-          failureThreshold: 30
-          httpGet:
-            path: dfgdfg
-            port: '333'
-            httpHeaders:
-              - name: dfgfdg
-                value: dfgdfg
     - name: MySecond Container
       imagePullPolicy: Always
       applicationPorts: []
