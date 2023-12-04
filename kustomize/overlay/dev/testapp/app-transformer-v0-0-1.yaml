@@ -38,13 +38,6 @@ spec:
             httpHeaders:
               - name: dfgfdg
                 value: dfgdfg
-        - probeType:
-            - startupProbe
-          initialDelaySeconds: 80
-          timeoutSeconds: 30
-          periodSeconds: 30
-          failureThreshold: 30
-          httpGet: {}
     - name: MySecond Container
       imagePullPolicy: Always
       applicationPorts: []
