@@ -45,6 +45,17 @@ spec:
             port: '4444'
           exec: {}
           successThreshold: 71
+        - probeType:
+            - startupProbe
+          initialDelaySeconds: 30
+          timeoutSeconds: 30
+          periodSeconds: 30
+          failureThreshold: 30
+          httpGet: {}
+          tcpSocket: {}
+          exec:
+            command:
+              - fdgfdg
     - name: MySecond Container
       imagePullPolicy: Always
       applicationPorts: []
