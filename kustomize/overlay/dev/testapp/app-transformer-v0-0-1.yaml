@@ -54,8 +54,8 @@ spec:
           httpGet: {}
           tcpSocket: {}
           exec:
-            command:
-              - fdgfdg
+            command: []
+          successThreshold: 30
     - name: MySecond Container
       imagePullPolicy: Always
       applicationPorts: []
