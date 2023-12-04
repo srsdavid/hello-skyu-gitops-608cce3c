@@ -33,7 +33,7 @@ spec:
           exec: {}
         - probeType:
             - livenessProbe
-          initialDelaySeconds: 30
+          initialDelaySeconds: 68
           timeoutSeconds: 30
           periodSeconds: 30
           failureThreshold: 30
@@ -41,6 +41,7 @@ spec:
           tcpSocket:
             port: '4444'
           exec: {}
+          successThreshold: 30
     - name: MySecond Container
       imagePullPolicy: Always
       applicationPorts: []
