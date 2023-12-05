@@ -44,7 +44,7 @@ spec:
           exec: {}
           successThreshold: 30
   minReplicas: 1
-  maxReplicas: 1
+  maxReplicas: '3'
   terminationGracePeriodSeconds: 60
   nodeSelector: {}
   suspend: false
@@ -59,7 +59,7 @@ spec:
     environmentName: prod
   horizontalAutoScalingRules:
     - ruleType: cpu
-      percentage: 1.1
+      percentage: 0.9
   volumes: []
   type: Deployment
   name: TestApp
