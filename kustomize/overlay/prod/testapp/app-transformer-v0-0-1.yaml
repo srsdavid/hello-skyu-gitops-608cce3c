@@ -31,6 +31,16 @@ spec:
             httpHeaders: []
           tcpSocket: {}
           exec: {}
+        - probeType:
+            - startupProbe
+          initialDelaySeconds: 30
+          timeoutSeconds: 30
+          periodSeconds: 30
+          failureThreshold: 30
+          httpGet: {}
+          tcpSocket:
+            port: '5555'
+          exec: {}
   minReplicas: 1
   maxReplicas: 1
   terminationGracePeriodSeconds: 60
