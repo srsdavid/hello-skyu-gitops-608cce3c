@@ -26,11 +26,12 @@ spec:
           periodSeconds: 30
           failureThreshold: 30
           httpGet:
-            path: dsfsdf
+            path: dsfsdffdg
             port: '22323'
             httpHeaders: []
           tcpSocket: {}
           exec: {}
+          successThreshold: 30
         - probeType:
             - startupProbe
           initialDelaySeconds: 30
