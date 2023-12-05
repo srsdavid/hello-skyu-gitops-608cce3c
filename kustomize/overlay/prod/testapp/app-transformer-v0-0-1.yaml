@@ -33,6 +33,7 @@ spec:
           successThreshold: 30
         - probeType:
             - startupProbe
+            - livenessProbe
           initialDelaySeconds: 30
           timeoutSeconds: 30
           periodSeconds: 30
@@ -41,6 +42,7 @@ spec:
           tcpSocket:
             port: '5555'
           exec: {}
+          successThreshold: 30
   minReplicas: 1
   maxReplicas: 1
   terminationGracePeriodSeconds: 60
