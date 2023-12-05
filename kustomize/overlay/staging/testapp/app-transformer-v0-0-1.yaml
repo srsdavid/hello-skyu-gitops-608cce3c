@@ -20,6 +20,7 @@ spec:
       healthChecks:
         - probeType:
             - readinessProbe
+            - livenessProbe
           initialDelaySeconds: 30
           timeoutSeconds: 30
           periodSeconds: 30
@@ -28,6 +29,7 @@ spec:
           tcpSocket:
             port: '333'
           exec: {}
+          successThreshold: 30
       name: testapp-main
       imagePullPolicy: Always
     - name: MyNewContainer
