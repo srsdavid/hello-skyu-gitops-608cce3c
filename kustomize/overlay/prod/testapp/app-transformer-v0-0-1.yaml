@@ -59,7 +59,7 @@ spec:
     environmentName: prod
   horizontalAutoScalingRules:
     - ruleType: cpu
-      percentage: 0.5
+      percentage: 1.1
   volumes: []
   type: Deployment
   name: TestApp
