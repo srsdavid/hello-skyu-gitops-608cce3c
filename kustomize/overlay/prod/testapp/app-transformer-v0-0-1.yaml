@@ -17,6 +17,20 @@ spec:
       memoryLimitMb: 1000
       command: []
       args: []
+      healthChecks:
+        - probeType:
+            - readinessProbe
+            - livenessProbe
+          initialDelaySeconds: 30
+          timeoutSeconds: 30
+          periodSeconds: 30
+          failureThreshold: 30
+          httpGet:
+            path: dsfsdf
+            port: '22323'
+            httpHeaders: []
+          tcpSocket: {}
+          exec: {}
   minReplicas: 1
   maxReplicas: 1
   terminationGracePeriodSeconds: 60
