@@ -20,7 +20,6 @@ spec:
       healthChecks:
         - probeType:
             - readinessProbe
-            - livenessProbe
           initialDelaySeconds: 30
           timeoutSeconds: 30
           periodSeconds: 30
