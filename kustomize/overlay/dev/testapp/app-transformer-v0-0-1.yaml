@@ -81,7 +81,7 @@ spec:
             command:
               - sdsd
   minReplicas: 1
-  maxReplicas: 1
+  maxReplicas: '3'
   terminationGracePeriodSeconds: 60
   nodeSelector: {}
   suspend: false
@@ -96,9 +96,9 @@ spec:
     environmentName: dev
   horizontalAutoScalingRules:
     - ruleType: cpu
-      percentage: 1.1
+      percentage: 1.6
     - ruleType: memory
-      percentage: 1609
+      percentage: 2062
   volumes: []
   type: Deployment
   name: TestApp
