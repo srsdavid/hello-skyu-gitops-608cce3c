@@ -30,6 +30,16 @@ spec:
             port: '333'
           exec: {}
           successThreshold: 30
+        - probeType:
+            - startupProbe
+          initialDelaySeconds: 30
+          timeoutSeconds: 30
+          periodSeconds: 30
+          failureThreshold: 30
+          httpGet: {}
+          tcpSocket:
+            port: '222'
+          exec: {}
       name: testapp-main
       imagePullPolicy: Always
     - name: MyNewContainer
