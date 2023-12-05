@@ -17,7 +17,17 @@ spec:
       command: []
       configMounts: []
       applicationPorts: []
-      healthChecks: []
+      healthChecks:
+        - probeType:
+            - readinessProbe
+          initialDelaySeconds: 30
+          timeoutSeconds: 30
+          periodSeconds: 30
+          failureThreshold: 30
+          httpGet: {}
+          tcpSocket:
+            port: '333'
+          exec: {}
       name: testapp-main
       imagePullPolicy: Always
     - name: MyNewContainer
