@@ -19,17 +19,6 @@ spec:
       applicationPorts: []
       healthChecks:
         - probeType:
-            - readinessProbe
-          initialDelaySeconds: 30
-          timeoutSeconds: 30
-          periodSeconds: 30
-          failureThreshold: 30
-          httpGet: {}
-          tcpSocket:
-            port: '333'
-          exec: {}
-          successThreshold: 30
-        - probeType:
             - startupProbe
             - livenessProbe
           initialDelaySeconds: 30
