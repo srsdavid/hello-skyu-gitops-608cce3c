@@ -57,7 +57,9 @@ spec:
     organizationId: org_5a158cfc-0d2c-467a-9217-db8b233a1b42
     environmentId: env_a1cfb8d4-f1c8-40ae-8772-a326d79b0d67
     environmentName: prod
-  horizontalAutoScalingRules: []
+  horizontalAutoScalingRules:
+    - ruleType: cpu
+      percentage: 0.5
   volumes: []
   type: Deployment
   name: TestApp
